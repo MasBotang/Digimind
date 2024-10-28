@@ -1,9 +1,7 @@
----
 # Digimind Integrated Empowering Solutions
 
 ### Catatan
 > Digimind Integrated Empowering Solutions adalah proyek perusahaan yang dirancang sebagai bagian dari tugas kuliah di kampus, dengan tujuan untuk menerapkan konsep-konsep manajemen dan teknologi dalam konteks bisnis yang nyata.
----
 
 ## Profil Perusahaan
 Digimind Integrated Empowering Solutions merupakan perusahaan yang didirikan sebagai bagian dari tugas yang diberikan di kampus, dengan tujuan untuk memahami dan merancang solusi teknologi yang dapat diimplementasikan dalam skala bisnis nyata.
