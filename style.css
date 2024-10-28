@@ -1,4 +1,4 @@
-body{
+body, section{
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box; 
@@ -9,7 +9,7 @@ body{
     padding-right: 0;
 }
 
-/* Nav Style */
+/* Nav Style */ 
 .navbar-collapse {
     display: flex;
     text-align: center;
@@ -107,7 +107,7 @@ body{
 .about-us-section::after {
     content: '';
     flex: 1;
-    border-bottom: 3px solid #008080; /* Customize the line color */
+    border-bottom: 3px solid #008080; 
     margin: 0 10px;
 }
 
@@ -127,23 +127,63 @@ body{
 }
 
 /* Our Team */
-.do-dark{
+.do-dark .dropdown-toggle {
     background-color: #147C8E;
-    padding: 5px;
-    border: 5px solid #147C8E;
-    border-radius: 10px;
+    color: #FFF3DA;
+    border: 3px solid #147C8E;
+    border-radius: 8px;
+    padding: 10px;
 }
-.do-light{
-    padding: 5px;
-    border: 5px solid #147C8E;
-    border-radius: 10px;
+
+.do-light .dropdown-toggle {
+    background-color: #FFF3DA;
+    color: #147C8E;
+    border: 3px solid #147C8E;
+    border-radius: 8px;
+    padding: 10px;
 }
-.do-down{
+.do-down {
     background-color: #147C8E;
-    padding: 5px;
-    border: 5px solid #147C8E;
-    border-radius: 10px;
+    border: 3px solid #147C8E;
+    border-radius: 8px;
+    padding: 0; 
+    max-width: 100%; 
 }
+
+.do-down .dropdown-item {
+    color: #FFF3DA;
+    padding: 12px 15px;
+    text-align: left;
+    white-space: normal; 
+    background-color: #147C8E; 
+    border-radius: 0 0 8px 8px; 
+    line-height: 1.4; 
+}
+
+.do-down .dropdown-item:hover {
+    background-color: #125D71; 
+}
+
+.do-light .dropdown-item {
+    color: #147C8E;
+    background-color: #FFF3DA;
+}
+
+.do-light .dropdown-item:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown-menu {
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+@media (max-width: 576px) {
+    .dropdown-item {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}   
 
 /* contact Us */
 .custom-textarea {
@@ -207,15 +247,9 @@ body{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-.team-member-image {
-    transition: transform 0.3s ease;
-}
-
 .team-member-container:hover .team-member-image {
     transform: scale(1.1);
 }
-
 .team-member-info {
     transition: background-color 0.3s ease;
 }
